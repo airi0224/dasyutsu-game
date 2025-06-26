@@ -6,7 +6,7 @@ const messages = {
   '2,0': '音のない部屋。なぜか涙がこぼれそうになる。',
   '0,1': 'ベッドの下に君の写真が落ちていた',
   '1,1': '中心の部屋。誰かの気配を感じる…',
-  '2,1': '鏡にメッセージが…「忘れないで」',
+  '2,3': '鏡にメッセージが…「忘れないで」',
   '0,2': '壁に彫られた名前…「しゅーと」',
   '1,2': '空っぽの部屋。でも温もりが残ってる',
   '2,2': '彼女がいる──（ここがゴール）',
@@ -25,10 +25,11 @@ function GameScreen({ position, setPosition, onGoal }) {
     }
   }, [position]);
 
+
   const move = (dx, dy) => {
     const newX = position.x + dx;
     const newY = position.y + dy;
-    if (newX >= 0 && newX <= 2 && newY >= 0 && newY <= 2) {
+    if (newX >= 0 && newX <= 3 && newY >= 0 && newY <= 3) {
       setPosition({ x: newX, y: newY });
     }
   };

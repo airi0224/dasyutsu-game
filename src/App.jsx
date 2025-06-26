@@ -28,6 +28,8 @@ import React, { useState } from 'react';
 import TitleScreen from './components/TitleScreen.jsx';
 import GameScreen from './components/GameScreen.jsx';
 import EndScreen from './components/EndScreen.jsx';
+// import './components/TitleScreen.css';
+
 
 function App() {
   const [scene, setScene] = useState('title'); // 'title', 'game', 'end'
@@ -42,7 +44,7 @@ function App() {
 
   return (
     <>
-      {scene === 'title' && <TitleScreen onStart={startGame} />}
+      {scene === 'title' && <TitleScreen  onStart={startGame} />}
       {scene === 'game' && (
         <GameScreen position={position} setPosition={setPosition} onGoal={reachGoal} />
       )}

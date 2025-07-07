@@ -2,6 +2,7 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import RoomView from '../../components/RoomView';
 
 export default function Room1() {
 
@@ -11,6 +12,7 @@ export default function Room1() {
   return (
     <div>
       <p>This is Room 1.</p>
+      <RoomView description={"Room view 1"}/>
       <p>ここに、ベッドがあります。</p>
       {!seenPicture && searchedBed && (
         <div>

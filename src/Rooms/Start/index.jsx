@@ -1,13 +1,24 @@
 import React from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import RoomView from '../../components/RoomView';
+
+
 
 export default function Start() {
   return (
-    <div>
-      <p>中心の部屋。誰かの気配を感じる…</p>
-      <p>ドアが二つある。でこへ行こうか？</p>
-      <Link to="/room1">西</Link>
-      <Link to="/room2">東</Link>
+    <div >
+      <RoomView description={"何も無い部屋"} />
+      
+      <p className="room-text">中心の部屋。誰かの気配を感じる…</p>
+      <p className="room-text">ドアが２つある。どっちへ行こうか？</p>
+   
+      
+      <p className="button-group">
+      <Link to="/room1" className="horror-link">左</Link>
+      <Link to="/room2" className="horror-link">右</Link>
+      </p>
+     
     </div>
   );
 }

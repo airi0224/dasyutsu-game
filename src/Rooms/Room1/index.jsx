@@ -11,8 +11,8 @@ export default function Room1() {
 
   return (
     <div>
-      <p>This is Room 1.</p>
-      <RoomView description={"Room view 1"} />
+      
+      <RoomView description={"寝室"} />
       <p className="room-text">目の前に、ベッドがある。</p>
 
       {!seenPicture && searchedBed && (

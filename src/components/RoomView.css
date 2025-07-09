@@ -1,7 +1,10 @@
 .title-screen {
+  b.title-screen {
   background-color: #121212;
   color: #f2f2f2;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,11 +45,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 .room-view {
-  width: 100vw;
-  height: 100vh;
+  width: 50vw;
+  height: 50vh;
   background-color: #0a0a0a;
   color: #eee;
-  font-family: 'Special Elite', monospace;
+  font-family: 'Noto Serif JP', serif;
+  /* font-family: 'Special Elite', monospace; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,17 +74,27 @@
   100% { opacity: 0.6; }
 
 }
+.start-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* RoomViewとボタンの間にスペース */
+  padding: 2rem;
+}
 
 .room-text {
-  font-family: 'Nosifer', cursive;
-  color: #4b0000;
-  text-shadow: 0 0 5px darkred;
+  font-family: 'Noto Serif JP', serif;
+  /* font-family: 'Nosifer', cursive; */
+  color: #a3a3a3;
+  text-shadow: 0 0 5px rgb(86, 18, 18);
 }
 .button-group {
   display: flex;
+  flex-direction:column;
   gap: 20px; /* ボタン間のスペース */
-  justify-content: center;
-  margin-top: 30px;
+  /* justify-content: center; */
+  
+  /* margin-top: 40px; */
 }
 
 .horror-button, .horror-link {
@@ -88,7 +102,7 @@
   color: red;
   border: 2px solid red;
   padding: 10px 20px;
-  font-family: 'Creepster', cursive;
+  font-family: 'Noto Serif JP', serif;
   font-size: 20px;
   cursor: pointer;
   text-decoration: none;
@@ -113,3 +127,120 @@
 /* .room-view {
   background-color: red !important;
 } */
+ackground-color: #121212;
+  color: #f2f2f2;
+  width: 50vw;
+  height: 50vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Serif JP', serif;
+}
+
+
+.game-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+}
+
+.start-button {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.start-button:hover {
+  background-color: #555;
+}
+
+
+/* RoomView.css */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+.room-view {
+  width: 50vw;
+  height: 50vh;
+  background-color: #0a0a0a;
+  color: #eee;
+  font-family: 'Noto Serif JP', serif;
+  /* font-family: 'Special Elite', monospace; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.game-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: #e63946;
+  text-shadow: 0 0 10px rgba(230, 57, 70, 0.7);
+  animation: flicker 2s infinite alternate;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.85; }
+  100% { opacity: 0.6; }
+
+}
+.start-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* RoomViewとボタンの間にスペース */
+  padding: 2rem;
+}
+
+.room-text {
+  font-family: 'Noto Serif JP', serif;
+  /* font-family: 'Nosifer', cursive; */
+  color: #a3a3a3;
+  text-shadow: 0 0 5px rgb(86, 18, 18);
+}
+.button-group {
+  display: flex;
+  flex-direction:column;
+  gap: 20px; /* ボタン間のスペース */
+  /* justify-content: center; */
+  
+  /* margin-top: 40px; */
+}
+
+.horror-button, .horror-link {
+  background-color: #000;
+  color: red;
+  border: 2px solid red;
+  padding: 10px 20px;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 3px black;
+}
+
+.horror-button:hover, .horror-link:hover {
+  background-color: red;
+  color: black;
+  border-color: black;
+  text-shadow: 2px 2px 5px red;
+}
+

@@ -10,20 +10,18 @@ export default function Room1() {
   const [searchedBed, setSearchedBed] = useState(false);
 
   return (
-    <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-800 text-red-800 space-y-4">
+    <div className="relative w-full h-screen flex flex-col items-center justify-center bg-gray-800 text-red-800 space-y-4">
 
-      <RoomView description={"寝室"} />
+      <RoomView description={"寝室"} className={""} />
       <p className="">目の前に、ベッドがある。</p>
 
       {!seenPicture && searchedBed && (
-        <div>
+        <div className=' relative flex flex-col justify-center space-y-4'>
           <p className="">ベッドの下に君の写真が落ちていた!</p>
-          <div className="">
-            <button className="bg-black text-red-600 border-2 border-red-600 py-3 px-5 text-xl" onClick={() => setSeenPicture(true)}>
-              写真を見る
-            </button>
+          <button className="mx-auto bg-black text-red-600 border-2 border-red-600 py-3 px-5 text-xl" onClick={() => setSeenPicture(true)}>
+            写真を見る
+          </button>
 
-          </div>
         </div>
       )}
 

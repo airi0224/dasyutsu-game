@@ -9,7 +9,7 @@ import RoomView from '../../components/RoomView';
 export default function Start() {
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-800 text-red-800">
-      <RoomView description={"何も無い部屋"} className="text-3xl" >
+      <RoomView description={"何も無い部屋"} className="" >
         <p className="">中心の部屋。誰かの気配を感じる…</p>
         <p className="">ドアが２つある。どっちへ行こうか？</p>
       </RoomView>

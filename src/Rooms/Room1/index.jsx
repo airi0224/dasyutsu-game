@@ -11,7 +11,7 @@ export default function Room1() {
 
   return (
     <div>
-      
+
       <RoomView description={"寝室"} />
       <p className="room-text">目の前に、ベッドがある。</p>
 
@@ -22,7 +22,7 @@ export default function Room1() {
             <button className="horror-button" onClick={() => setSeenPicture(true)}>
               写真を見る
             </button>
-          
+
           </div>
         </div>
       )}
@@ -38,7 +38,7 @@ export default function Room1() {
           ベッドを調べる
         </button>
       )}
-        <Link to="/start" className="horror-link button-group"　>元の部屋へ</Link>
+      <Link to="/start" className="horror-link button-group"　>元の部屋へ</Link>
     </div>
   );
 }

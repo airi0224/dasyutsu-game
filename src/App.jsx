@@ -13,12 +13,12 @@
 
 //   return (
 //     <>
-      
+
 //       {scene === 'title' &&<TitleScreen onStart={startGame}/>}
 //       {scene === 'game' &&<GameScreen onEscape={escape} hasKey={hasKey} setHasKey={setHasKey}/>}
 //       {scene === 'escape' &&<EscapeScreen/>}
 
-      
+
 //     </>
 //   );
 // }
@@ -43,13 +43,8 @@ function App() {
   const reachGoal = () => setScene('end');
 
   return (
-    <>
-      {scene === 'title' && <TitleScreen  onStart={startGame} />}
-      {scene === 'game' && (
-        <GameScreen position={position} setPosition={setPosition} onGoal={reachGoal} />
-      )}
-      {scene === 'end' && <EndScreen />}
-    </>
+    <div className=''>
+    </div>
   );
 }
 

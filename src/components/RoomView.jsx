@@ -16,8 +16,8 @@ import React from 'react';
 
 export default function RoomView({ description, children }) {
   return (
-    <div className="room-view">
-      <p className="game-title">{description}</p>
+    <div className="">
+      <p className="text-2xl text-center mb-2">{description}</p>
       {children}
     </div>
   );

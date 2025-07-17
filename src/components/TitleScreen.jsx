@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './TitleScreen.css';
+// import './TitleScreen.css';
 
 function TitleScreen() {
   return (
-    <div className="title-screen" style={{ textAlign: 'center', marginTop: 100 }}>
-      <h1 className="game-title">君は、まだここにいる気がする。</h1>
-      <p className="subtitle">9つの部屋を探して、あの日の答えを見つけよう。</p>
+    <div className="bg-gray-800 text-red-800 w-full h-screen flex flex-col items-center justify-center" >
+      <h1 className="text-3xl">君は、まだここにいる気がする。</h1>
+      <p className="mb-10 text-xs">9つの部屋を探して、あの日の答えを見つけよう。</p>
       <Link to="/start">
-        <button>探しに行く</button>
+        <button className='border p-4'>探しに行く</button>
       </Link>
     </div>
   );

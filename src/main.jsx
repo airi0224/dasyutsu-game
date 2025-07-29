@@ -5,6 +5,7 @@ import "./index.css";
 import TitleScreen from "./components/TitleScreen.jsx";
 import Start from "./Rooms/Start/index.jsx";
 import Room1 from "./Rooms/Room1/index.jsx";
+import Room2 from "./Rooms/Room2/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/room1",
     element: <Room1 />,
+  },
+  {
+    path: "/room2",
+    element: <Room2 />,
   },
 ]);
 
